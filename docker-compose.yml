@@ -1,13 +1,13 @@
 version: '3'
 services:
   dtrack:
-    environment:
+    # environment:
     # The Dependency-Track container can be configured using any of the
     # available configuration properties defined in:
     # https://docs.dependencytrack.org/getting-started/configuration/
     # All properties are upper case with periods replaced by underscores.
     
-    Database Properties
+    Database Properties:
     - ALPINE_DATABASE_MODE=external
     - ALPINE_DATABASE_URL=jdbc:postgresql://postgres10:5432/dtrack
     - ALPINE_DATABASE_DRIVER=org.postgresql.Driver
